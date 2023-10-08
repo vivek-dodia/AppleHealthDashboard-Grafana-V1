@@ -101,7 +101,7 @@
               "headers": [
                 {
                   "key": "Authorization",
-                  "value": "Token ef22bde69b018edde088a37b9f8bd44b70e4dc90"
+                  "value": "Token {{token}}"
                 }
               ],
               "method": "GET"
@@ -185,7 +185,7 @@
               "headers": [
                 {
                   "key": "Authorization",
-                  "value": "Token ef22bde69b018edde088a37b9f8bd44b70e4dc90"
+                  "value": "Token {{token}}"
                 }
               ],
               "method": "GET"
@@ -269,7 +269,7 @@
               "headers": [
                 {
                   "key": "Authorization",
-                  "value": "Token ef22bde69b018edde088a37b9f8bd44b70e4dc90"
+                  "value": "Token {{token}}"
                 }
               ],
               "method": "GET"
@@ -364,7 +364,7 @@
               "headers": [
                 {
                   "key": "Authorization",
-                  "value": "Token ef22bde69b018edde088a37b9f8bd44b70e4dc90"
+                  "value": "Token {{token}}"
                 }
               ],
               "method": "GET"
@@ -442,7 +442,7 @@
             "root_selector": "$.user.playcount",
             "source": "url",
             "type": "json",
-            "url": "http://ws.audioscrobbler.com/2.0/?method=user.getinfo&user=blaaackbear&api_key=a8a7eb36f1864f90978c7b6de1ce6501&format=json",
+            "url": "http://ws.audioscrobbler.com/2.0/?method=user.getinfo&user=username&api_key=key&format=json",
             "url_options": {
               "data": "",
               "headers": [],
@@ -561,7 +561,7 @@
               "headers": [
                 {
                   "key": "Authorization",
-                  "value": "Token ef22bde69b018edde088a37b9f8bd44b70e4dc90"
+                  "value": "Token {{token}}"
                 }
               ],
               "method": "GET"
@@ -698,7 +698,7 @@
               "headers": [
                 {
                   "key": "Authorization",
-                  "value": "Token ef22bde69b018edde088a37b9f8bd44b70e4dc90"
+                  "value": "Token {{token}}"
                 }
               ],
               "method": "GET"
@@ -835,7 +835,7 @@
               "headers": [
                 {
                   "key": "Authorization",
-                  "value": "Token ef22bde69b018edde088a37b9f8bd44b70e4dc90"
+                  "value": "Token {{token}}"
                 }
               ],
               "method": "GET"
@@ -941,7 +941,7 @@
               "headers": [
                 {
                   "key": "Authorization",
-                  "value": "Token ef22bde69b018edde088a37b9f8bd44b70e4dc90"
+                  "value": "Token {{token}}"
                 }
               ],
               "method": "GET"
@@ -1084,7 +1084,7 @@
             "source": "url",
             "type": "json",
             "uql": "parse-json",
-            "url": "http://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=blaaackbear&api_key=a8a7eb36f1864f90978c7b6de1ce6501&format=json",
+            "url": "http://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=user&api_key=key&format=json",
             "url_options": {
               "data": "",
               "headers": [],
@@ -1210,7 +1210,7 @@
             "source": "url",
             "type": "json",
             "uql": "parse-json",
-            "url": "http://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=blaaackbear&api_key=a8a7eb36f1864f90978c7b6de1ce6501&format=json",
+            "url": "http://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=user&api_key=key&format=json",
             "url_options": {
               "data": "",
               "headers": [],
@@ -1306,7 +1306,7 @@
               "headers": [
                 {
                   "key": "Authorization",
-                  "value": "Token ef22bde69b018edde088a37b9f8bd44b70e4dc90"
+                  "value": "Token {{token}}"
                 }
               ],
               "method": "GET"
@@ -1334,7 +1334,7 @@
               "headers": [
                 {
                   "key": "Authorization",
-                  "value": "Token ef22bde69b018edde088a37b9f8bd44b70e4dc90"
+                  "value": "Token {{token}}"
                 }
               ],
               "method": "GET"
@@ -1362,7 +1362,7 @@
               "headers": [
                 {
                   "key": "Authorization",
-                  "value": "Token ef22bde69b018edde088a37b9f8bd44b70e4dc90"
+                  "value": "Token {{token}}"
                 }
               ],
               "method": "GET"
