@@ -1,0 +1,93 @@
+#to request api token
+
+-X POST "https://exist.io/api/1/auth/simple-token/" -d "username=user" -d "password=pw"   
+{"token":"token"}
+will 
+
+
+//exist_io api attributes
+
+//current active attributes, can be edited from below url given creds
+https://exist.io/account/attributes/
+
+attributes labeled by web vs api
+//this is important as we will using these attributes to pull data via api
+
+https://exist.io/api/2/attributes/
+
+steps = steps
+active minutes = steps_active_min
+Active energy burned = active_energy
+Stand hours = stand_hours
+Time in bed =   "
+amount of workouts aka Workouts = Workouts
+Workout time = workouts_min"
+Weight = weight
+Average heartrate = heartrate
+HRV = heartrate_variability
+Max heartrate = heartrate_max
+Resting heartrate = heartrate_resting
+
+https://exist.io/api/2/attributes/values/?attribute=[name]
+
+for authentication, put the token value in header as below
+
+-H "Authorization: Bearer [token]"
+
+//can interact and get specific values by using 
+
+https://exist.io/api/2/attributes/values/?attribute=[name]&parameter=possible_value with example below
+
+https://exist.io/api/2/attributes/values/?attribute=time_in_bed&limit=1
+
+{
+  "count": 3217,
+  "next": "https://exist.io/api/2/attributes/values/?attribute=steps&page=2",
+  "previous": null,
+  "results": [
+    {
+      "date": "2022-05-13",
+      "value": 1765
+    },
+    {
+      "date": "2022-05-12",
+      "value": 6792
+    },
+    {
+      "date": "2022-05-11",
+      "value": 4632
+    },
+    {
+      "date": "2022-05-10",
+      "value": 2121
+    },
+    {
+      "date": "2022-05-09",
+      "value": 5141
+    },
+    // ...snip!...
+  ]
+}
+
+
+--------------
+
+//prtg auth header
+
+Authorization: Token ef22bde69b018edde088a37b9f8bd44b70e4dc90
+
+//grafana auth header
+
+GET/POST method 
+Key = Authorization
+Value = Token {{token}}
+
+
+
+
+
+
+
+
+
+

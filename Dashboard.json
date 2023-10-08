@@ -1,0 +1,1419 @@
+{
+    "annotations": {
+      "list": [
+        {
+          "builtIn": 1,
+          "datasource": {
+            "type": "grafana",
+            "uid": "-- Grafana --"
+          },
+          "enable": true,
+          "hide": true,
+          "iconColor": "rgba(0, 211, 255, 1)",
+          "name": "Annotations & Alerts",
+          "target": {
+            "limit": 100,
+            "matchAny": false,
+            "tags": [],
+            "type": "dashboard"
+          },
+          "type": "dashboard"
+        }
+      ]
+    },
+    "editable": true,
+    "fiscalYearStartMonth": 0,
+    "graphTooltip": 0,
+    "id": 15,
+    "links": [],
+    "liveNow": false,
+    "panels": [
+      {
+        "datasource": {
+          "type": "yesoreyeram-infinity-datasource",
+          "uid": "0t-soa5Vk"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "continuous-RdYlGr"
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            },
+            "unit": "steps"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 5,
+          "w": 4,
+          "x": 0,
+          "y": 0
+        },
+        "id": 3,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "area",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": true
+          },
+          "text": {
+            "valueSize": 70
+          },
+          "textMode": "auto"
+        },
+        "pluginVersion": "10.2.0-60853",
+        "targets": [
+          {
+            "columns": [],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "0t-soa5Vk"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "refId": "A",
+            "root_selector": "$.results.0.value",
+            "source": "url",
+            "type": "json",
+            "url": "https://exist.io/api/2/attributes/values/?attribute=steps",
+            "url_options": {
+              "data": "",
+              "headers": [
+                {
+                  "key": "Authorization",
+                  "value": "Token ef22bde69b018edde088a37b9f8bd44b70e4dc90"
+                }
+              ],
+              "method": "GET"
+            }
+          }
+        ],
+        "title": "realtime Steps today",
+        "transparent": true,
+        "type": "stat"
+      },
+      {
+        "datasource": {
+          "type": "yesoreyeram-infinity-datasource",
+          "uid": "0t-soa5Vk"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "continuous-RdYlGr"
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            },
+            "unit": "bpm"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 5,
+          "w": 3,
+          "x": 4,
+          "y": 0
+        },
+        "id": 5,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "area",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "text": {
+            "valueSize": 70
+          },
+          "textMode": "auto"
+        },
+        "pluginVersion": "10.2.0-60853",
+        "targets": [
+          {
+            "columns": [],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "0t-soa5Vk"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "refId": "A",
+            "root_selector": "$.results.0.value",
+            "source": "url",
+            "type": "json",
+            "url": "https://exist.io/api/2/attributes/values/?attribute=heartrate",
+            "url_options": {
+              "data": "",
+              "headers": [
+                {
+                  "key": "Authorization",
+                  "value": "Token ef22bde69b018edde088a37b9f8bd44b70e4dc90"
+                }
+              ],
+              "method": "GET"
+            }
+          }
+        ],
+        "title": "Average heartrate today",
+        "transparent": true,
+        "type": "stat"
+      },
+      {
+        "datasource": {
+          "type": "yesoreyeram-infinity-datasource",
+          "uid": "0t-soa5Vk"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "continuous-RdYlGr"
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            },
+            "unit": "bpm"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 5,
+          "w": 3,
+          "x": 7,
+          "y": 0
+        },
+        "id": 11,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "area",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "text": {
+            "valueSize": 70
+          },
+          "textMode": "auto"
+        },
+        "pluginVersion": "10.2.0-60853",
+        "targets": [
+          {
+            "columns": [],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "0t-soa5Vk"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "refId": "A",
+            "root_selector": "$.results.0.value",
+            "source": "url",
+            "type": "json",
+            "url": "https://exist.io/api/2/attributes/values/?attribute=heartrate_resting",
+            "url_options": {
+              "data": "",
+              "headers": [
+                {
+                  "key": "Authorization",
+                  "value": "Token ef22bde69b018edde088a37b9f8bd44b70e4dc90"
+                }
+              ],
+              "method": "GET"
+            }
+          }
+        ],
+        "title": "Yesterday average resting heartbeat",
+        "transformations": [
+          {
+            "id": "convertFieldType",
+            "options": {
+              "conversions": [],
+              "fields": {}
+            }
+          }
+        ],
+        "transparent": true,
+        "type": "stat"
+      },
+      {
+        "datasource": {
+          "type": "yesoreyeram-infinity-datasource",
+          "uid": "0t-soa5Vk"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "continuous-RdYlGr"
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            },
+            "unit": "m"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 5,
+          "w": 3,
+          "x": 10,
+          "y": 0
+        },
+        "id": 20,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "area",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "text": {
+            "valueSize": 70
+          },
+          "textMode": "auto"
+        },
+        "pluginVersion": "10.2.0-60853",
+        "targets": [
+          {
+            "columns": [],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "0t-soa5Vk"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "parser": "simple",
+            "refId": "A",
+            "root_selector": "$.results.1.value",
+            "source": "url",
+            "type": "json",
+            "uql": "parse-json",
+            "url": "https://exist.io/api/2/attributes/values/?attribute=time_in_bed",
+            "url_options": {
+              "data": "",
+              "headers": [
+                {
+                  "key": "Authorization",
+                  "value": "Token ef22bde69b018edde088a37b9f8bd44b70e4dc90"
+                }
+              ],
+              "method": "GET"
+            }
+          }
+        ],
+        "title": "Sleep last night ",
+        "transformations": [],
+        "transparent": true,
+        "type": "stat"
+      },
+      {
+        "datasource": {
+          "type": "yesoreyeram-infinity-datasource",
+          "uid": "0t-soa5Vk"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            },
+            "unit": "tracks"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 5,
+          "w": 5,
+          "x": 13,
+          "y": 0
+        },
+        "id": 10,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "area",
+          "justifyMode": "auto",
+          "orientation": "vertical",
+          "reduceOptions": {
+            "calcs": [],
+            "fields": "/.*/",
+            "values": true
+          },
+          "text": {
+            "valueSize": 70
+          },
+          "textMode": "auto"
+        },
+        "pluginVersion": "10.2.0-60853",
+        "targets": [
+          {
+            "columns": [],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "0t-soa5Vk"
+            },
+            "filters": [],
+            "format": "dataframe",
+            "global_query_id": "",
+            "parser": "backend",
+            "refId": "A",
+            "root_selector": "$.user.playcount",
+            "source": "url",
+            "type": "json",
+            "url": "http://ws.audioscrobbler.com/2.0/?method=user.getinfo&user=blaaackbear&api_key=a8a7eb36f1864f90978c7b6de1ce6501&format=json",
+            "url_options": {
+              "data": "",
+              "headers": [],
+              "method": "GET"
+            }
+          }
+        ],
+        "title": "Spotify playcounts",
+        "transparent": true,
+        "type": "stat"
+      },
+      {
+        "datasource": {
+          "type": "yesoreyeram-infinity-datasource",
+          "uid": "0t-soa5Vk"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "continuous-RdYlGr",
+              "seriesBy": "max"
+            },
+            "custom": {
+              "axisCenteredZero": false,
+              "axisColorMode": "series",
+              "axisGridShow": false,
+              "axisLabel": "",
+              "axisPlacement": "left",
+              "axisShow": false,
+              "barAlignment": 0,
+              "drawStyle": "line",
+              "fillOpacity": 0,
+              "gradientMode": "scheme",
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "insertNulls": false,
+              "lineInterpolation": "smooth",
+              "lineStyle": {
+                "fill": "solid"
+              },
+              "lineWidth": 1,
+              "pointSize": 8,
+              "scaleDistribution": {
+                "type": "linear"
+              },
+              "showPoints": "always",
+              "spanNulls": false,
+              "stacking": {
+                "group": "A",
+                "mode": "none"
+              },
+              "thresholdsStyle": {
+                "mode": "off"
+              }
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 10000
+                }
+              ]
+            },
+            "unit": "Steps"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 11,
+          "w": 8,
+          "x": 0,
+          "y": 5
+        },
+        "id": 24,
+        "options": {
+          "legend": {
+            "calcs": [],
+            "displayMode": "list",
+            "placement": "bottom",
+            "showLegend": false
+          },
+          "tooltip": {
+            "mode": "single",
+            "sort": "none"
+          }
+        },
+        "pluginVersion": "9.3.2-45365",
+        "targets": [
+          {
+            "columns": [],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "0t-soa5Vk"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "parser": "simple",
+            "refId": "A",
+            "root_selector": "",
+            "source": "url",
+            "type": "json",
+            "uql": "parse-json",
+            "url": "https://exist.io/api/2/attributes/values/?attribute=steps",
+            "url_options": {
+              "data": "",
+              "headers": [
+                {
+                  "key": "Authorization",
+                  "value": "Token ef22bde69b018edde088a37b9f8bd44b70e4dc90"
+                }
+              ],
+              "method": "GET"
+            }
+          }
+        ],
+        "title": "Average steps ",
+        "transformations": [
+          {
+            "id": "convertFieldType",
+            "options": {
+              "conversions": [
+                {
+                  "dateFormat": "YYYY-MM-DD",
+                  "destinationType": "time",
+                  "targetField": "date"
+                },
+                {
+                  "destinationType": "number",
+                  "targetField": "value"
+                }
+              ],
+              "fields": {}
+            }
+          }
+        ],
+        "transparent": true,
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "yesoreyeram-infinity-datasource",
+          "uid": "0t-soa5Vk"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "continuous-RdYlGr",
+              "seriesBy": "max"
+            },
+            "custom": {
+              "axisCenteredZero": false,
+              "axisColorMode": "series",
+              "axisGridShow": false,
+              "axisLabel": "",
+              "axisPlacement": "left",
+              "axisShow": false,
+              "barAlignment": 0,
+              "drawStyle": "line",
+              "fillOpacity": 0,
+              "gradientMode": "scheme",
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "insertNulls": false,
+              "lineInterpolation": "smooth",
+              "lineStyle": {
+                "fill": "solid"
+              },
+              "lineWidth": 1,
+              "pointSize": 10,
+              "scaleDistribution": {
+                "type": "linear"
+              },
+              "showPoints": "always",
+              "spanNulls": true,
+              "stacking": {
+                "group": "A",
+                "mode": "none"
+              },
+              "thresholdsStyle": {
+                "mode": "dashed"
+              }
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            },
+            "unit": "bps"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 11,
+          "w": 7,
+          "x": 8,
+          "y": 5
+        },
+        "id": 27,
+        "options": {
+          "legend": {
+            "calcs": [],
+            "displayMode": "list",
+            "placement": "bottom",
+            "showLegend": false
+          },
+          "tooltip": {
+            "mode": "single",
+            "sort": "none"
+          }
+        },
+        "pluginVersion": "9.3.2-45365",
+        "targets": [
+          {
+            "columns": [],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "0t-soa5Vk"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "parser": "simple",
+            "refId": "A",
+            "root_selector": "",
+            "source": "url",
+            "type": "json",
+            "uql": "parse-json",
+            "url": "https://exist.io/api/2/attributes/values/?attribute=heartrate",
+            "url_options": {
+              "data": "",
+              "headers": [
+                {
+                  "key": "Authorization",
+                  "value": "Token ef22bde69b018edde088a37b9f8bd44b70e4dc90"
+                }
+              ],
+              "method": "GET"
+            }
+          }
+        ],
+        "title": "Average heartrate",
+        "transformations": [
+          {
+            "id": "convertFieldType",
+            "options": {
+              "conversions": [
+                {
+                  "dateFormat": "YYYY-MM-DD",
+                  "destinationType": "time",
+                  "targetField": "date"
+                },
+                {
+                  "destinationType": "other",
+                  "targetField": "value"
+                }
+              ],
+              "fields": {}
+            }
+          }
+        ],
+        "transparent": true,
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "yesoreyeram-infinity-datasource",
+          "uid": "0t-soa5Vk"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "continuous-RdYlGr",
+              "seriesBy": "max"
+            },
+            "custom": {
+              "axisCenteredZero": false,
+              "axisColorMode": "series",
+              "axisGridShow": false,
+              "axisLabel": "",
+              "axisPlacement": "left",
+              "axisShow": false,
+              "barAlignment": 0,
+              "drawStyle": "line",
+              "fillOpacity": 0,
+              "gradientMode": "scheme",
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "insertNulls": false,
+              "lineInterpolation": "smooth",
+              "lineStyle": {
+                "fill": "solid"
+              },
+              "lineWidth": 1,
+              "pointSize": 10,
+              "scaleDistribution": {
+                "type": "linear"
+              },
+              "showPoints": "always",
+              "spanNulls": false,
+              "stacking": {
+                "group": "A",
+                "mode": "none"
+              },
+              "thresholdsStyle": {
+                "mode": "off"
+              }
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 1000
+                }
+              ]
+            },
+            "unit": "calories"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 11,
+          "w": 8,
+          "x": 16,
+          "y": 5
+        },
+        "id": 26,
+        "options": {
+          "legend": {
+            "calcs": [],
+            "displayMode": "list",
+            "placement": "bottom",
+            "showLegend": false
+          },
+          "tooltip": {
+            "mode": "single",
+            "sort": "none"
+          }
+        },
+        "pluginVersion": "9.3.2-45365",
+        "targets": [
+          {
+            "columns": [],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "0t-soa5Vk"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "parser": "simple",
+            "refId": "A",
+            "root_selector": "",
+            "source": "url",
+            "type": "json",
+            "uql": "parse-json",
+            "url": "https://exist.io/api/2/attributes/values/?attribute=active_energy",
+            "url_options": {
+              "data": "",
+              "headers": [
+                {
+                  "key": "Authorization",
+                  "value": "Token ef22bde69b018edde088a37b9f8bd44b70e4dc90"
+                }
+              ],
+              "method": "GET"
+            }
+          }
+        ],
+        "title": "active energy",
+        "transformations": [
+          {
+            "id": "convertFieldType",
+            "options": {
+              "conversions": [
+                {
+                  "dateFormat": "YYYY-MM-DD",
+                  "destinationType": "time",
+                  "targetField": "date"
+                }
+              ],
+              "fields": {}
+            }
+          }
+        ],
+        "transparent": true,
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "yesoreyeram-infinity-datasource",
+          "uid": "0t-soa5Vk"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "custom": {
+              "fillOpacity": 67,
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "lineWidth": 0
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "transparent",
+                  "value": null
+                },
+                {
+                  "color": "light-green",
+                  "value": 1
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 4,
+          "w": 24,
+          "x": 0,
+          "y": 16
+        },
+        "id": 25,
+        "options": {
+          "colWidth": 1,
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom",
+            "showLegend": false
+          },
+          "rowHeight": 0,
+          "showValue": "auto",
+          "tooltip": {
+            "mode": "single",
+            "sort": "none"
+          }
+        },
+        "pluginVersion": "9.3.2-45365",
+        "targets": [
+          {
+            "columns": [],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "0t-soa5Vk"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "parser": "simple",
+            "refId": "A",
+            "root_selector": "",
+            "source": "url",
+            "type": "json",
+            "uql": "parse-json",
+            "url": "https://exist.io/api/2/attributes/values/?attribute=workouts",
+            "url_options": {
+              "data": "",
+              "headers": [
+                {
+                  "key": "Authorization",
+                  "value": "Token ef22bde69b018edde088a37b9f8bd44b70e4dc90"
+                }
+              ],
+              "method": "GET"
+            }
+          }
+        ],
+        "title": "workouts",
+        "transformations": [
+          {
+            "id": "convertFieldType",
+            "options": {
+              "conversions": [
+                {
+                  "dateFormat": "YYYY-MM-DD",
+                  "destinationType": "time",
+                  "targetField": "date"
+                },
+                {
+                  "destinationType": "number",
+                  "targetField": "value"
+                }
+              ],
+              "fields": {}
+            }
+          }
+        ],
+        "transparent": true,
+        "type": "status-history"
+      },
+      {
+        "datasource": {
+          "type": "yesoreyeram-infinity-datasource",
+          "uid": "0t-soa5Vk"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "continuous-RdYlGr"
+            },
+            "custom": {
+              "axisCenteredZero": false,
+              "axisColorMode": "text",
+              "axisGridShow": false,
+              "axisLabel": "",
+              "axisPlacement": "auto",
+              "axisShow": false,
+              "fillOpacity": 80,
+              "gradientMode": "none",
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "lineWidth": 1,
+              "scaleDistribution": {
+                "type": "linear"
+              },
+              "thresholdsStyle": {
+                "mode": "off"
+              }
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            },
+            "unit": "short"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 23,
+          "w": 8,
+          "x": 0,
+          "y": 20
+        },
+        "id": 9,
+        "options": {
+          "barRadius": 0.4,
+          "barWidth": 0.56,
+          "colorByField": "playcount",
+          "fullHighlight": false,
+          "groupWidth": 0.7,
+          "legend": {
+            "calcs": [],
+            "displayMode": "list",
+            "placement": "bottom",
+            "showLegend": false
+          },
+          "orientation": "horizontal",
+          "showValue": "never",
+          "stacking": "none",
+          "tooltip": {
+            "mode": "single",
+            "sort": "none"
+          },
+          "xField": "name",
+          "xTickLabelRotation": 0,
+          "xTickLabelSpacing": 0
+        },
+        "pluginVersion": "9.3.2-45365",
+        "targets": [
+          {
+            "columns": [
+              {
+                "selector": "@attr",
+                "text": "rank",
+                "type": "string"
+              },
+              {
+                "selector": "name",
+                "text": "name",
+                "type": "string"
+              },
+              {
+                "selector": "playcount",
+                "text": "playcount",
+                "type": "number"
+              }
+            ],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "0t-soa5Vk"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "parser": "simple",
+            "refId": "A",
+            "root_selector": "$.toptracks.track",
+            "source": "url",
+            "type": "json",
+            "uql": "parse-json",
+            "url": "http://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=blaaackbear&api_key=a8a7eb36f1864f90978c7b6de1ce6501&format=json",
+            "url_options": {
+              "data": "",
+              "headers": [],
+              "method": "GET"
+            }
+          }
+        ],
+        "title": "My Spotify top tracks",
+        "transparent": true,
+        "type": "barchart"
+      },
+      {
+        "datasource": {
+          "type": "yesoreyeram-infinity-datasource",
+          "uid": "0t-soa5Vk"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "continuous-RdYlGr"
+            },
+            "custom": {
+              "axisCenteredZero": false,
+              "axisColorMode": "text",
+              "axisGridShow": false,
+              "axisLabel": "",
+              "axisPlacement": "auto",
+              "axisShow": false,
+              "fillOpacity": 100,
+              "gradientMode": "hue",
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "lineWidth": 1,
+              "scaleDistribution": {
+                "log": 2,
+                "type": "log"
+              },
+              "thresholdsStyle": {
+                "mode": "off"
+              }
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            },
+            "unit": "short"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 23,
+          "w": 7,
+          "x": 8,
+          "y": 20
+        },
+        "id": 15,
+        "options": {
+          "barRadius": 0.4,
+          "barWidth": 0.56,
+          "colorByField": "playcount",
+          "fullHighlight": false,
+          "groupWidth": 0.7,
+          "legend": {
+            "calcs": [],
+            "displayMode": "list",
+            "placement": "bottom",
+            "showLegend": false
+          },
+          "orientation": "horizontal",
+          "showValue": "never",
+          "stacking": "none",
+          "tooltip": {
+            "mode": "single",
+            "sort": "none"
+          },
+          "xField": "name",
+          "xTickLabelRotation": 0,
+          "xTickLabelSpacing": 0
+        },
+        "pluginVersion": "9.3.2-45365",
+        "targets": [
+          {
+            "columns": [
+              {
+                "selector": "@attr",
+                "text": "rank",
+                "type": "string"
+              },
+              {
+                "selector": "name",
+                "text": "name",
+                "type": "string"
+              },
+              {
+                "selector": "playcount",
+                "text": "playcount",
+                "type": "number"
+              }
+            ],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "0t-soa5Vk"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "parser": "simple",
+            "refId": "A",
+            "root_selector": "$.topartists.artist",
+            "source": "url",
+            "type": "json",
+            "uql": "parse-json",
+            "url": "http://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=blaaackbear&api_key=a8a7eb36f1864f90978c7b6de1ce6501&format=json",
+            "url_options": {
+              "data": "",
+              "headers": [],
+              "method": "GET"
+            }
+          }
+        ],
+        "title": "My Spotify top artists",
+        "transparent": true,
+        "type": "barchart"
+      },
+      {
+        "datasource": {
+          "type": "yesoreyeram-infinity-datasource",
+          "uid": "0t-soa5Vk"
+        },
+        "description": "",
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "continuous-GrYlRd"
+            },
+            "custom": {
+              "fillOpacity": 70,
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "insertNulls": false,
+              "lineWidth": 0,
+              "spanNulls": false
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 23,
+          "w": 9,
+          "x": 15,
+          "y": 20
+        },
+        "id": 28,
+        "options": {
+          "alignValue": "left",
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom",
+            "showLegend": true
+          },
+          "mergeValues": true,
+          "rowHeight": 0.9,
+          "showValue": "auto",
+          "tooltip": {
+            "mode": "single",
+            "sort": "none"
+          }
+        },
+        "pluginVersion": "9.4.7",
+        "targets": [
+          {
+            "columns": [],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "0t-soa5Vk"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "parser": "simple",
+            "refId": "A",
+            "root_selector": "",
+            "source": "url",
+            "type": "json",
+            "uql": "parse-json",
+            "url": "https://exist.io/api/2/attributes/values/?attribute=max_bench",
+            "url_options": {
+              "data": "",
+              "headers": [
+                {
+                  "key": "Authorization",
+                  "value": "Token ef22bde69b018edde088a37b9f8bd44b70e4dc90"
+                }
+              ],
+              "method": "GET"
+            }
+          },
+          {
+            "columns": [],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "0t-soa5Vk"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "hide": false,
+            "parser": "simple",
+            "refId": "B",
+            "root_selector": "",
+            "source": "url",
+            "type": "json",
+            "uql": "parse-json",
+            "url": "https://exist.io/api/2/attributes/values/?attribute=max_deadlift",
+            "url_options": {
+              "data": "",
+              "headers": [
+                {
+                  "key": "Authorization",
+                  "value": "Token ef22bde69b018edde088a37b9f8bd44b70e4dc90"
+                }
+              ],
+              "method": "GET"
+            }
+          },
+          {
+            "columns": [],
+            "datasource": {
+              "type": "yesoreyeram-infinity-datasource",
+              "uid": "0t-soa5Vk"
+            },
+            "filters": [],
+            "format": "table",
+            "global_query_id": "",
+            "hide": false,
+            "parser": "simple",
+            "refId": "C",
+            "root_selector": "",
+            "source": "url",
+            "type": "json",
+            "uql": "parse-json",
+            "url": "https://exist.io/api/2/attributes/values/?attribute=max_squat",
+            "url_options": {
+              "data": "",
+              "headers": [
+                {
+                  "key": "Authorization",
+                  "value": "Token ef22bde69b018edde088a37b9f8bd44b70e4dc90"
+                }
+              ],
+              "method": "GET"
+            }
+          }
+        ],
+        "title": "bench/deadlift/squat",
+        "transformations": [
+          {
+            "id": "convertFieldType",
+            "options": {
+              "conversions": [
+                {
+                  "dateFormat": "YYYY-MM-DD",
+                  "destinationType": "time",
+                  "targetField": "A date"
+                },
+                {
+                  "dateFormat": "YYYY-MM-DD",
+                  "destinationType": "time",
+                  "targetField": "B date"
+                },
+                {
+                  "dateFormat": "YYYY-MM-DD",
+                  "destinationType": "time",
+                  "targetField": "C date"
+                }
+              ],
+              "fields": {}
+            }
+          }
+        ],
+        "transparent": true,
+        "type": "state-timeline"
+      }
+    ],
+    "refresh": "",
+    "revision": 1,
+    "schemaVersion": 38,
+    "tags": [],
+    "templating": {
+      "list": []
+    },
+    "time": {
+      "from": "now-2d",
+      "to": "now"
+    },
+    "timepicker": {},
+    "timezone": "",
+    "title": "test",
+    "uid": "rcpM1-cVz",
+    "version": 85,
+    "weekStart": ""
+  }

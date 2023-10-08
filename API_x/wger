@@ -1,0 +1,27 @@
+https://wger.de/en/software/api
+
+//authentication for token
+
+curl \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -d '{"username": "vivekdodia", "password": "Ek^ftL!*^E7Rh6"}' \
+  https://wger.de/api/v2/token/
+
+...
+{
+  "access":"x",
+  "refresh":"y"
+
+  ------------------
+
+  personal token : 
+
+  curl 
+  -X POST 
+  -H "Content-Type: application/json" 
+  -d '{"username": "vivekdodia", "password": "Ek^ftL!*^E7Rh6"}'
+  https://wger.de/api/v2/token/
+
+  {"refresh":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY3MTUwNDUxMSwiaWF0IjoxNjcxNDE4MTExLCJqdGkiOiJhZmU0NWZkMjlkYzE0M2EwOWVjYWRjMDRhZjA2YjM0OCIsInVzZXJfaWQiOjE4NjUzMn0.V5dyV8Ve59063RV7S2TdA7a7oPNd0Yl6bsG-nU9kthk",
+  "access":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjcxNDE4NDExLCJpYXQiOjE2NzE0MTgxMTEsImp0aSI6IjQ1Y2I2MmQ0MjQxNDRjMGI4Y2U2ZDMyYWU3NTMzOTgyIiwidXNlcl9pZCI6MTg2NTMyfQ.-SCQjPdyBEw25V5Fo9cDPzIRLCZ2qWrKfxS_n0lOoLw"}
