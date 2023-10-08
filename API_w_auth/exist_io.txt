@@ -1,7 +1,7 @@
 #to request api token
 
--X POST "https://exist.io/api/1/auth/simple-token/" -d "username=username" -d "password=password"   
-{"token":"token"}
+-X POST "https://exist.io/api/1/auth/simple-token/" -d "username=vivekdodia" -d "password=^9Ksd7VAFYWHhE"   
+{"token":"ef22bde69b018edde088a37b9f8bd44b70e4dc90"}
 will 
 
 
@@ -74,13 +74,13 @@ https://exist.io/api/2/attributes/values/?attribute=time_in_bed&limit=1
 
 //prtg auth header
 
-Authorization: Token {{token}}
+Authorization: Token ef22bde69b018edde088a37b9f8bd44b70e4dc90
 
 //grafana auth header
 
 GET/POST method 
 Key = Authorization
-Value = Token {{token}}
+Value = Token ef22bde69b018edde088a37b9f8bd44b70e4dc90
 
 
 
